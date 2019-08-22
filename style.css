@@ -254,3 +254,17 @@ header {
 .contact-box-right-content .fa:last-child {
   margin-right: 0;
 }
+
+/*---------------------------*/
+footer {
+  width: 100%;
+  height: 60px;
+  background-color: #EC715F;
+}
+
+.copyright {
+  text-align: center;
+  line-height: 60px;
+  color: #FAFAFA;
+  font-size: 16px;
+}
