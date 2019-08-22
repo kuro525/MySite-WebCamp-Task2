@@ -52,7 +52,15 @@ header {
 }
 
 .header-logo {
+  max-width: 200px;
   height: 100%;
+}
+
+.header-menu {
+  display: none;
+  color: #ffffff;
+  font-size: 32px;
+  margin: 0 0 0 auto;
 }
 
 .header-nav {
@@ -73,6 +81,7 @@ header {
   height: 650px;
   background-image: url("./img/mv.png");
   background-size: cover;
+  background-position: center;
   text-align: center;
   color: #FAFAFA;
 }
@@ -94,7 +103,7 @@ header {
 }
 
 .portfolio-img-box {
-  width: 920px;
+  max-width: 920px;
   margin: 0 auto;
   padding: 30px 0 90px;
 }
@@ -214,7 +223,7 @@ header {
   color: #000000;
 }
 
-.contact-box-left {
+.contact-box-left, .contact-box-right {
   width: 400px;
 }
 
@@ -235,10 +244,6 @@ header {
 
 .contact-box-link {
   color: #000000;
-}
-
-.contact-box-right {
-  width: 400px;
 }
 
 .contact-box-right-content {
@@ -267,4 +272,105 @@ footer {
   line-height: 60px;
   color: #FAFAFA;
   font-size: 16px;
+}
+
+
+/*---------------------------*/
+@media screen and (max-width: 767px) {
+  .none {
+    display: none;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  section {
+    padding: 0 5%;
+  }
+
+  /*---------------------------*/
+  header {
+    height: 50px;
+  }
+
+  .header-menu {
+    display: block;
+  }
+
+  /*---------------------------*/
+  .main-visual {
+    background-image: url("./img/code.png");
+  }
+
+  .main-visual-title {
+    font-size: 40px;
+  }
+
+  .main-visual-text {
+    font-size: 18px;
+  }
+
+  /*---------------------------*/
+  .portfolio-img {
+    float: none;
+    margin: 0 auto 10px;
+  }
+
+  .portfolio-img:nth-child(n+3) {
+    margin-bottom: 10px;
+  }
+
+  .portfolio-img:last-child {
+    margin-bottom: 0;
+  }
+
+  /*---------------------------*/
+  .strength-box {
+    display: block;
+  }
+
+  .strength {
+    margin: 0 auto;
+  }
+
+  .strength-text {
+    text-align: left;
+  }
+
+  /*---------------------------*/
+  .profile-box {
+    display: block;
+  }
+
+  .profile-right {
+    text-align: center;
+  }
+
+  .profile-left, .profile-right {
+    width: 100%;
+  }
+
+  .profile-right-title:first-child {
+    margin-top: 20px;
+  }
+
+  /*---------------------------*/
+  .contact-box {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+
+  .contact-box-left, .contact-box-right {
+    width: 100%;
+  }
+
+  .contact-box-right {
+    margin-top: 20px;
+  }
+
+  .contact-box-right-content .fa {
+    margin-right: 8px;
+  }
 }
